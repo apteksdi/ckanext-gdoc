@@ -28,7 +28,7 @@ class GdocPlugin(plugins.SingletonPlugin):
         }
 
     def can_view(self, data_dict):
-        return data_dict['resource']['format'].lower() in ['doc', 'pdf', 'xls', 'xlsx']
+        return data_dict['resource']['format'].lower() in ['doc', 'pdf', 'xls', 'xlsx', 'xlsm']
 
     def view_template(self, context, data_dict):
         return "gdoc/preview.html"
