@@ -22,7 +22,7 @@ class GdocPlugin(plugins.SingletonPlugin):
         }
 
     def setup_template_variables(self, context, data_dict):
-        print data_dict["resource"]['url']
+        print(data_dict["resource"]['url'])
         return {
             "resource_url": data_dict["resource"]["url"]
         }
